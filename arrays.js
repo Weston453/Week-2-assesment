@@ -21,16 +21,22 @@ console.log(colorCopy)
 const numbers = [1, 2, 3, 4, 5]
 
 //CODE HERE
+
 let middleNums = []
-for(let i = 0; i < numbers.length; i++){
-  if (numbers[i] === 2){
-    middleNums.push(numbers[i])
-  } else if (numbers[i] === 3){
-    middleNums.push(numbers[i])
-  } else if(numbers[i] === 4){
-    middleNums.push(numbers[i])
-  }
+for(let i = 1; i < numbers.length -1; i++){
+  middleNums.push(numbers[i])
 }
+  //   if (numbers[i] === 2){
+// let middleNums = []
+// for(let i = 0; i < numbers.length; i++){
+//   if (numbers[i] === 2){
+//     middleNums.push(numbers[i])
+//   } else if (numbers[i] === 3){
+//     middleNums.push(numbers[i])
+//   } else if(numbers[i] === 4){
+//     middleNums.push(numbers[i])
+//   }
+// }
 console.log(middleNums)
 //////////////////PROBLEM 4////////////////////
 /* 
@@ -55,6 +61,7 @@ function bigOrSmall(arr){
       answers.push('small')
     }
   }
+  return answers
 }
-bigOrSmall(200);
-console.log(answers[i])
+
+console.log(bigOrSmall(99))

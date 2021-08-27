@@ -10,7 +10,7 @@
 */
 
 //CODE HERE
-
+let gitDefinition = "allows us to navigate our files, work on local projects, and comunicate with github"
 //////////////////PROBLEM 2////////////////////
 /*
     Create a variable called 'gitHubDefinition'.  
@@ -18,7 +18,7 @@
 */
 
 //CODE HERE
-
+let gitHubDefinition = "git stores multiple versions of a project"
 //////////////////PROBLEMS 3 - 8////////////////////
 /*
     For the next several problems you will be creating objects containing information about different git 
@@ -34,7 +34,10 @@
 */
 
 //CODE HERE
-
+let init = {
+    description: "initializes a local repository",
+    code: "git init",
+}
 //////////////////PROBLEM 4////////////////////
 /*
     Create an object called 'clone' with 'description' and 'code' properties 
@@ -42,7 +45,10 @@
 */
 
 //CODE HERE
-
+let clone = {
+    description : "copy a repo from git hub and puts it on my computer",
+    code: "git clone REPO_URL"
+}
 //////////////////PROBLEM 5////////////////////
 /*
     Create an object called 'status' with 'description' and 'code' properties 
@@ -50,7 +56,10 @@
 */
 
 //CODE HERE
-
+let status = {
+    description : "tells me about this repo",
+    code: "git status",
+}
 //////////////////PROBLEM 6////////////////////
 /*
     Create an object called 'add' with 'description' and 'code' properties 
@@ -58,7 +67,10 @@
 */
 
 //CODE HERE
-
+let clone = {
+    description : "add some files to be tracked ",
+    code: "git add .",
+}
 //////////////////PROBLEM 7////////////////////
 /*
     Create an object called 'commit' with 'description' and 'code' properties
@@ -66,7 +78,10 @@
 */
 
 //CODE HERE
-
+let commit = {
+    description : "create a snapshot of the files I’m tracking",
+    code: "git commit -m'message'",
+}
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -75,3 +90,7 @@
 */
 
 //CODE HERE
+let push = {
+    description : "pushes current saved file up to gitHub",
+    code: "git push"
+}

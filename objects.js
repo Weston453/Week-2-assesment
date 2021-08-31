@@ -19,9 +19,11 @@ let me = {
   firstName : "Weston",
   state : "Utah",
   age : 25,
+  greeter : function(){
+    return `Hello! My name is ${me.firstName} and I live in ${me.state}`
+  }
 }
-// function greeter(`Hello! My name is ${firstName} and I live in ${state}`)
-// console.log(greeter)
+console.log(me.greeter())
 
 
 
@@ -50,23 +52,39 @@ let me = {
 */
 
 //CODE HERE
-
-function carFactory(make, model, year){
-  class carFactory{
-    constructor(make, model, year){
-      this.make = make;
-      this.model = model;
-      this.year = year;
-    }
+function carFactory(make,model,year){
+  let object = {
+  make : make,
+  model : model,
+  year : year,
   }
-if( this.year > 2018){
-    carFactory.isNew = true
+  if(object.year > 2018){
+    object.isNew = true
   } else {
-    carFactory.isNew = false
-  }  
+    object.isNew = false
+  }
+  return object
 }
-// let myCar = new carFactory('toyota', 'camry', 2020)
-console.log( new carFactory('toyota', 'camry', 2020))
+
+let toyota = carFactory("Toyota", "Tundra", 2004)
+console.log(toyota)
+
+// function carFactory(make, model, year){
+//   class carFactory{
+//     constructor(make, model, year){
+//       this.make = make;
+//       this.model = model;
+//       this.year = year;
+//     }
+//   }
+// if( this.year > 2018){
+//     carFactory.isNew = true
+//   } else {
+//     carFactory.isNew = false
+//   }  
+// }
+// // let myCar = new carFactory('toyota', 'camry', 2020)
+// console.log( new carFactory('toyota', 'camry', 2020))
 
 // class carFactory{
 //   constructor(make, model, year){

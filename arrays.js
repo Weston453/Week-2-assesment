@@ -22,22 +22,16 @@ const numbers = [1, 2, 3, 4, 5]
 
 //CODE HERE
 
-let middleNums = []
-for(let i = 1; i < numbers.length -1; i++){
-  middleNums.push(numbers[i])
-}
-  //   if (numbers[i] === 2){
 // let middleNums = []
-// for(let i = 0; i < numbers.length; i++){
-//   if (numbers[i] === 2){
-//     middleNums.push(numbers[i])
-//   } else if (numbers[i] === 3){
-//     middleNums.push(numbers[i])
-//   } else if(numbers[i] === 4){
-//     middleNums.push(numbers[i])
-//   }
+// for(let i = 1; i < numbers.length -1; i++){
+//   middleNums.push(numbers[i])
 // }
+
+const middleNums = numbers.splice(1,3)
+// const middleNums2 = numbers.slice(1,3)
+
 console.log(middleNums)
+// console.log(middleNums2)
 //////////////////PROBLEM 4////////////////////
 /* 
   Create a function called 'bigOrSmall' that takes in one parameter, 'arr', 
@@ -64,4 +58,5 @@ function bigOrSmall(arr){
   return answers
 }
 
-console.log(bigOrSmall(99))
+let arr = [200,300,20,39,101,100,206]
+console.log(bigOrSmall(arr))
